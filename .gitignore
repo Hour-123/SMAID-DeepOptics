@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Environment files
+.env
+.env.*
+
+# Test / tooling cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Dataset and local data
+data/
+
+# Training / inference outputs
+outputs/
+
+# Large model or array artifacts
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
