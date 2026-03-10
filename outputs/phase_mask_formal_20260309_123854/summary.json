@@ -1,0 +1,240 @@
+{
+  "output_dir": "outputs/phase_mask_formal_20260309_123854",
+  "best_val": 0.10848960213363171,
+  "best_epoch": 39,
+  "last_train_stats": {
+    "L_total": 0.08656839092822,
+    "L_rgb": 0.022004205032602243,
+    "L_depth": 0.0021253248162737266,
+    "L_optics_reg": 5.3484480429625395e-05
+  },
+  "last_val_stats": {
+    "L_total": 0.10848960213363171,
+    "L_rgb": 0.02624322520568967,
+    "L_depth": 0.002797474298470964,
+    "L_optics_reg": 5.366576078813523e-05
+  },
+  "export_modes": [
+    "continuous",
+    "quantized"
+  ],
+  "quantization_reg_history": [
+    {
+      "epoch": 0,
+      "quantization_reg": 0.0001
+    },
+    {
+      "epoch": 1,
+      "quantization_reg": 0.00012307692307692307
+    },
+    {
+      "epoch": 2,
+      "quantization_reg": 0.00014615384615384615
+    },
+    {
+      "epoch": 3,
+      "quantization_reg": 0.00016923076923076923
+    },
+    {
+      "epoch": 4,
+      "quantization_reg": 0.0001923076923076923
+    },
+    {
+      "epoch": 5,
+      "quantization_reg": 0.0002153846153846154
+    },
+    {
+      "epoch": 6,
+      "quantization_reg": 0.00023846153846153847
+    },
+    {
+      "epoch": 7,
+      "quantization_reg": 0.00026153846153846154
+    },
+    {
+      "epoch": 8,
+      "quantization_reg": 0.0002846153846153846
+    },
+    {
+      "epoch": 9,
+      "quantization_reg": 0.0003076923076923077
+    },
+    {
+      "epoch": 10,
+      "quantization_reg": 0.00033076923076923073
+    },
+    {
+      "epoch": 11,
+      "quantization_reg": 0.0003538461538461538
+    },
+    {
+      "epoch": 12,
+      "quantization_reg": 0.00037692307692307694
+    },
+    {
+      "epoch": 13,
+      "quantization_reg": 0.00039999999999999996
+    },
+    {
+      "epoch": 14,
+      "quantization_reg": 0.00042307692307692304
+    },
+    {
+      "epoch": 15,
+      "quantization_reg": 0.0004461538461538462
+    },
+    {
+      "epoch": 16,
+      "quantization_reg": 0.0004692307692307692
+    },
+    {
+      "epoch": 17,
+      "quantization_reg": 0.0004923076923076923
+    },
+    {
+      "epoch": 18,
+      "quantization_reg": 0.0005153846153846155
+    },
+    {
+      "epoch": 19,
+      "quantization_reg": 0.0005384615384615384
+    },
+    {
+      "epoch": 20,
+      "quantization_reg": 0.0005615384615384615
+    },
+    {
+      "epoch": 21,
+      "quantization_reg": 0.0005846153846153846
+    },
+    {
+      "epoch": 22,
+      "quantization_reg": 0.0006076923076923077
+    },
+    {
+      "epoch": 23,
+      "quantization_reg": 0.0006307692307692309
+    },
+    {
+      "epoch": 24,
+      "quantization_reg": 0.0006538461538461539
+    },
+    {
+      "epoch": 25,
+      "quantization_reg": 0.000676923076923077
+    },
+    {
+      "epoch": 26,
+      "quantization_reg": 0.0007
+    },
+    {
+      "epoch": 27,
+      "quantization_reg": 0.0007230769230769231
+    },
+    {
+      "epoch": 28,
+      "quantization_reg": 0.0007461538461538462
+    },
+    {
+      "epoch": 29,
+      "quantization_reg": 0.0007692307692307692
+    },
+    {
+      "epoch": 30,
+      "quantization_reg": 0.0007923076923076924
+    },
+    {
+      "epoch": 31,
+      "quantization_reg": 0.0008153846153846154
+    },
+    {
+      "epoch": 32,
+      "quantization_reg": 0.0008384615384615385
+    },
+    {
+      "epoch": 33,
+      "quantization_reg": 0.0008615384615384615
+    },
+    {
+      "epoch": 34,
+      "quantization_reg": 0.0008846153846153846
+    },
+    {
+      "epoch": 35,
+      "quantization_reg": 0.0009076923076923077
+    },
+    {
+      "epoch": 36,
+      "quantization_reg": 0.0009307692307692309
+    },
+    {
+      "epoch": 37,
+      "quantization_reg": 0.0009538461538461539
+    },
+    {
+      "epoch": 38,
+      "quantization_reg": 0.0009769230769230768
+    },
+    {
+      "epoch": 39,
+      "quantization_reg": 0.001
+    }
+  ],
+  "args": {
+    "data_dir": "data/processed/nyuv2_near_range_patches",
+    "output_dir": "outputs",
+    "batch_size": 2,
+    "num_workers": 8,
+    "epochs": 40,
+    "steps_per_epoch": null,
+    "val_steps": null,
+    "learning_rate": 0.0001,
+    "psf_learning_rate": 0.01,
+    "lambda_depth": 20.0,
+    "lambda_rgb": 2.0,
+    "base_channels": 64,
+    "optics_type": "phase_mask",
+    "psf_size": 191,
+    "psf_init": "delta",
+    "num_depth_layers": 8,
+    "depth_min": 0.3,
+    "depth_max": 1.5,
+    "focus_distance": 0.9,
+    "wavelengths": [
+      6.35e-07,
+      5.3e-07,
+      4.5e-07
+    ],
+    "refractive_indices": [
+      1.4295,
+      1.4349,
+      1.4421
+    ],
+    "pupil_radius": 0.001,
+    "wave_resolution": 255,
+    "phase_mask_size": 0.003,
+    "sensor_pixel_size": null,
+    "focal_length": 0.035,
+    "sensor_distance": null,
+    "no_thin_lens": false,
+    "height_map_max": 1.55e-06,
+    "height_map_noise_std": 0.0,
+    "height_quantization_res": 2.116e-08,
+    "laplace_reg": 0.0003,
+    "psf_edge_reg": 0.001,
+    "quantization_reg": 0.001,
+    "quantization_reg_anneal": true,
+    "quantization_reg_anneal_start_scale": 0.1,
+    "quantization_reg_anneal_start_frac": 0.0,
+    "quantization_reg_anneal_end_frac": 1.0,
+    "noise_std": 0.0,
+    "auto_exposure": true,
+    "fixed_gain": 5.0,
+    "fix_qe": true,
+    "device": "auto",
+    "seed": 42,
+    "run_name": "phase_mask_formal",
+    "num_visualization_samples": 8,
+    "save_full_psf_visualizations": true
+  }
+}

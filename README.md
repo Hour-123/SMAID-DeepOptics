@@ -4,6 +4,7 @@ PyTorch reimplementation scaffold inspired by `DeepOpticsHDR`, adapted for SMAID
 
 Current focus:
 - `DirectPSF` training path
+- `PhaseMask` training path
 - depth-dependent PSF bank
 - RAW camera simulation from RGB-D patches
 - joint RGB + depth reconstruction
@@ -26,7 +27,8 @@ SMAID-DeepOptics/
 └── utils/
     ├── camera_sim.py
     ├── img_io.py
-    └── log_utils.py
+    ├── log_utils.py
+    └── prepare_nyuv2.py
 ```
 
 ## Quick Start
@@ -59,6 +61,109 @@ Each `.npz` patch should contain:
 - `rgb`
 - `depth`
 - `mask`
+
+## Data Download And Preprocessing
+
+`data/` is intentionally not tracked in git. The current repository contains the training / inference code, but not the dataset itself.
+
+What is already implemented in code:
+
+- `train.py` and `demo_function.py` load processed patches from `data/processed/nyuv2_near_range_patches/...`
+- `utils/img_io.py` implements `PatchDataset`, which reads per-sample `.npz` files
+- `utils/prepare_nyuv2.py` converts raw NYUv2 data into train/val `.npz` patches
+- each `.npz` is expected to contain:
+  - `rgb`: RGB image patch, stored as `H x W x 3`
+  - `depth`: depth patch, stored as `H x W`
+  - `mask`: valid near-range depth mask, stored as `H x W`
+
+What is not implemented in this repo yet:
+
+- no dataset downloader
+- no script that fetches NYUv2 or any other RGB-D dataset
+
+Expected raw NYUv2 layout:
+
+```text
+data/raw/nyuv2/
+├── nyu_depth_v2_labeled.mat
+└── splits.mat                       # optional but recommended
+```
+
+The preprocessing script is designed around the common NYUv2 MATLAB release:
+
+- RGB key: `images`
+- depth key: `depths` by default
+- optional depth key: `rawDepths`
+- split keys from `splits.mat`: `trainNdxs` and `testNdxs` or `valNdxs`
+
+Recommended workflow if you want to prepare data:
+
+1. Download NYUv2 manually and place the raw files under `data/raw/nyuv2/`.
+2. Run the preprocessing script to create train / val patches:
+
+```bash
+python utils/prepare_nyuv2.py \
+  --raw_root data/raw/nyuv2 \
+  --output_root data/processed/nyuv2_near_range_patches \
+  --patch_size 256 \
+  --stride 128 \
+  --depth_min 0.3 \
+  --depth_max 1.5 \
+  --overwrite
+```
+
+3. The script writes patches under:
+
+```text
+data/processed/nyuv2_near_range_patches/
+├── train/
+└── val/
+```
+
+4. Point `--data_dir` to that processed root when running training or demo.
+
+What `utils/prepare_nyuv2.py` does:
+
+1. Read aligned RGB and depth pairs from `nyu_depth_v2_labeled.mat`.
+2. Use `splits.mat` if present; otherwise fall back to a random train/val split.
+3. Clip depth into the configured range, default `[0.3, 1.5]` meters.
+4. Build `mask` from finite, positive, in-range depth pixels.
+5. Optionally crop borders with `--border_crop`.
+6. Tile each frame into overlapping square patches with `--patch_size` and `--stride`.
+7. Skip patches with too little valid depth or too little RGB texture.
+8. Save each accepted patch as one `.npz` file.
+9. Write `prepare_summary.json` under the output root.
+
+Useful preprocessing options:
+
+```text
+--depth_key          depths | rawDepths
+--patch_size         default 256
+--stride             default 128
+--depth_min          default 0.3
+--depth_max          default 1.5
+--min_valid_ratio    default 0.2
+--min_rgb_std        default 0.02
+--border_crop        default 0
+--overwrite          replace existing processed patches
+```
+
+Example patch export:
+
+```python
+np.savez_compressed(
+    out_path,
+    rgb=rgb_uint8_hw3,
+    depth=depth_float32_hw,
+    mask=mask_float32_hw,
+)
+```
+
+Important status note:
+
+- today, the repo can train and infer from processed `.npz` patches
+- today, the repo can preprocess raw NYUv2 `.mat` data into `.npz` patches
+- today, the repo still does not download NYUv2 automatically
 
 ## Train a Model
 
@@ -231,7 +336,7 @@ The current camera simulator in `utils/camera_sim.py` does the following:
 Current simplifications:
 - Depth uses only nearest two-layer interpolation rather than a richer continuous PSF model
 - QE is currently a compact `3x3` channel-mixing approximation rather than a full spectral response curve
-- No phase-mask propagation path yet in active use
+- Evaluation is still centered on training losses; standard image/depth metrics are not yet reported in the training loop
 
 ## Current Optical Metadata
 
@@ -245,6 +350,6 @@ These values are currently stored as metadata for future physics-based extension
 
 ## Notes
 
-- `DirectPSF` is the active optimization path right now.
-- `PhaseMaskOptics` is intentionally left as a future extension point.
+- Both `DirectPSF` and `PhaseMaskOptics` are implemented training paths.
+- `PhaseMaskOptics` now supports continuous and quantized exports for PSF and height-map inspection.
 - RAW outputs may look visually blurry because they are blurred, depth-layered, Bayer-sampled measurements rather than display-ready RGB images.

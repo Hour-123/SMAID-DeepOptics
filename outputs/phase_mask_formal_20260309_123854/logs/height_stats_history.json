@@ -1,0 +1,322 @@
+[
+  {
+    "epoch": 0,
+    "height_min": 3.2030143870542815e-07,
+    "height_max": 1.2892693348476314e-06,
+    "height_mean": 7.793295253577526e-07,
+    "height_std": 9.232381614765472e-08,
+    "height_dynamic_range": 9.689679245639127e-07
+  },
+  {
+    "epoch": 1,
+    "height_min": 1.9799902872819075e-07,
+    "height_max": 1.4556410405930365e-06,
+    "height_mean": 7.805932682458661e-07,
+    "height_std": 1.2937066173890344e-07,
+    "height_dynamic_range": 1.257641997653991e-06
+  },
+  {
+    "epoch": 2,
+    "height_min": 1.0578851572518033e-07,
+    "height_max": 1.5040202470117947e-06,
+    "height_mean": 7.80116295118205e-07,
+    "height_std": 1.5720014800990612e-07,
+    "height_dynamic_range": 1.3982316886540502e-06
+  },
+  {
+    "epoch": 3,
+    "height_min": 2.93362294456756e-08,
+    "height_max": 1.5044545307318913e-06,
+    "height_mean": 7.799971513122728e-07,
+    "height_std": 1.7328430601537548e-07,
+    "height_dynamic_range": 1.4751183243788546e-06
+  },
+  {
+    "epoch": 4,
+    "height_min": 1.2715771546822907e-08,
+    "height_max": 1.528614916423976e-06,
+    "height_mean": 7.803380981385999e-07,
+    "height_std": 1.7961149012535316e-07,
+    "height_dynamic_range": 1.515899157311651e-06
+  },
+  {
+    "epoch": 5,
+    "height_min": 6.337344427009839e-09,
+    "height_max": 1.539590130050783e-06,
+    "height_mean": 7.804704296177079e-07,
+    "height_std": 1.8243821386931813e-07,
+    "height_dynamic_range": 1.5332527709688293e-06
+  },
+  {
+    "epoch": 6,
+    "height_min": 3.411564364341757e-09,
+    "height_max": 1.5451421404577559e-06,
+    "height_mean": 7.807473139109788e-07,
+    "height_std": 1.8521953393246804e-07,
+    "height_dynamic_range": 1.5417306258314056e-06
+  },
+  {
+    "epoch": 7,
+    "height_min": 1.8188526240692227e-09,
+    "height_max": 1.5477129409191548e-06,
+    "height_mean": 7.808645250406698e-07,
+    "height_std": 1.860816638554752e-07,
+    "height_dynamic_range": 1.5458940652024467e-06
+  },
+  {
+    "epoch": 8,
+    "height_min": 1.112407499448409e-09,
+    "height_max": 1.5488070630453876e-06,
+    "height_mean": 7.810659781171125e-07,
+    "height_std": 1.8747655872175528e-07,
+    "height_dynamic_range": 1.5476946373382816e-06
+  },
+  {
+    "epoch": 9,
+    "height_min": 6.498929727705161e-10,
+    "height_max": 1.549350031382346e-06,
+    "height_mean": 7.812669764462044e-07,
+    "height_std": 1.8840675863884826e-07,
+    "height_dynamic_range": 1.5487000837310916e-06
+  },
+  {
+    "epoch": 10,
+    "height_min": 3.791058578173079e-10,
+    "height_max": 1.5496491414523916e-06,
+    "height_mean": 7.816751690370438e-07,
+    "height_std": 1.8978448679263238e-07,
+    "height_dynamic_range": 1.54926999584859e-06
+  },
+  {
+    "epoch": 11,
+    "height_min": 2.552804634348149e-10,
+    "height_max": 1.5497946606046753e-06,
+    "height_mean": 7.819325560376456e-07,
+    "height_std": 1.9043730503653933e-07,
+    "height_dynamic_range": 1.5495394336539903e-06
+  },
+  {
+    "epoch": 12,
+    "height_min": 1.560165191483165e-10,
+    "height_max": 1.5498695802307338e-06,
+    "height_mean": 7.82311758484866e-07,
+    "height_std": 1.91644105029809e-07,
+    "height_dynamic_range": 1.5497136018893798e-06
+  },
+  {
+    "epoch": 13,
+    "height_min": 9.417001206601938e-11,
+    "height_max": 1.5499084611292346e-06,
+    "height_mean": 7.828073194104945e-07,
+    "height_std": 1.9206591161946562e-07,
+    "height_dynamic_range": 1.5498143284276011e-06
+  },
+  {
+    "epoch": 14,
+    "height_min": 5.842674261069547e-11,
+    "height_max": 1.549936087030801e-06,
+    "height_mean": 7.831087600607134e-07,
+    "height_std": 1.930274180494962e-07,
+    "height_dynamic_range": 1.549877651996212e-06
+  },
+  {
+    "epoch": 15,
+    "height_min": 3.119064381773562e-11,
+    "height_max": 1.5499585970246699e-06,
+    "height_mean": 7.835575956960383e-07,
+    "height_std": 1.944032561596032e-07,
+    "height_dynamic_range": 1.5499274468311341e-06
+  },
+  {
+    "epoch": 16,
+    "height_min": 1.8239670190878243e-11,
+    "height_max": 1.5499746268687886e-06,
+    "height_mean": 7.839393560971075e-07,
+    "height_std": 1.9549494822967972e-07,
+    "height_dynamic_range": 1.5499564369747532e-06
+  },
+  {
+    "epoch": 17,
+    "height_min": 1.0294739886951287e-11,
+    "height_max": 1.5499846313105081e-06,
+    "height_mean": 7.842855325179698e-07,
+    "height_std": 1.954775399326536e-07,
+    "height_dynamic_range": 1.5499742858082755e-06
+  },
+  {
+    "epoch": 18,
+    "height_min": 6.359355750329421e-12,
+    "height_max": 1.5499896335313679e-06,
+    "height_mean": 7.844773222132062e-07,
+    "height_std": 1.960859918881397e-07,
+    "height_dynamic_range": 1.5499832670684555e-06
+  },
+  {
+    "epoch": 19,
+    "height_min": 4.217863471683847e-12,
+    "height_max": 1.5499925893891486e-06,
+    "height_mean": 7.848749987715564e-07,
+    "height_std": 1.9708404863649776e-07,
+    "height_dynamic_range": 1.549988382976153e-06
+  },
+  {
+    "epoch": 20,
+    "height_min": 2.9741849174452772e-12,
+    "height_max": 1.5499946357522276e-06,
+    "height_mean": 7.852349312997831e-07,
+    "height_std": 1.9763068337397272e-07,
+    "height_dynamic_range": 1.5499916798944469e-06
+  },
+  {
+    "epoch": 21,
+    "height_min": 2.2470254823492297e-12,
+    "height_max": 1.549996113681118e-06,
+    "height_mean": 7.853682291170117e-07,
+    "height_std": 1.9783394122896425e-07,
+    "height_dynamic_range": 1.5499938399443636e-06
+  },
+  {
+    "epoch": 22,
+    "height_min": 1.8179557251946088e-12,
+    "height_max": 1.5499967958021443e-06,
+    "height_mean": 7.855926469346741e-07,
+    "height_std": 1.9812529217233532e-07,
+    "height_dynamic_range": 1.5499949768127408e-06
+  },
+  {
+    "epoch": 23,
+    "height_min": 1.5031640212062602e-12,
+    "height_max": 1.549997364236333e-06,
+    "height_mean": 7.860279538363102e-07,
+    "height_std": 1.989654663248075e-07,
+    "height_dynamic_range": 1.5499958863074426e-06
+  },
+  {
+    "epoch": 24,
+    "height_min": 1.2889778220476211e-12,
+    "height_max": 1.5499975916100084e-06,
+    "height_mean": 7.861701760702999e-07,
+    "height_std": 1.9872993561875774e-07,
+    "height_dynamic_range": 1.5499963410547934e-06
+  },
+  {
+    "epoch": 25,
+    "height_min": 1.1361757888683766e-12,
+    "height_max": 1.5499979326705215e-06,
+    "height_mean": 7.864122721912281e-07,
+    "height_std": 1.9950645935296052e-07,
+    "height_dynamic_range": 1.5499967958021443e-06
+  },
+  {
+    "epoch": 26,
+    "height_min": 1.0179321578360212e-12,
+    "height_max": 1.549998160044197e-06,
+    "height_mean": 7.866120768085239e-07,
+    "height_std": 1.997433258793535e-07,
+    "height_dynamic_range": 1.5499971368626575e-06
+  },
+  {
+    "epoch": 27,
+    "height_min": 9.25100057322381e-13,
+    "height_max": 1.5499985011047102e-06,
+    "height_mean": 7.869520572967303e-07,
+    "height_std": 2.0000813094611658e-07,
+    "height_dynamic_range": 1.5499975916100084e-06
+  },
+  {
+    "epoch": 28,
+    "height_min": 8.548786678552744e-13,
+    "height_max": 1.5499985011047102e-06,
+    "height_mean": 7.868791840337508e-07,
+    "height_std": 2.0072675965820963e-07,
+    "height_dynamic_range": 1.5499975916100084e-06
+  },
+  {
+    "epoch": 29,
+    "height_min": 7.958724282906837e-13,
+    "height_max": 1.5499987284783856e-06,
+    "height_mean": 7.874456287026987e-07,
+    "height_std": 2.003283299245595e-07,
+    "height_dynamic_range": 1.5499979326705215e-06
+  },
+  {
+    "epoch": 30,
+    "height_min": 7.464802972804996e-13,
+    "height_max": 1.5499988421652233e-06,
+    "height_mean": 7.877731036387559e-07,
+    "height_std": 2.0099051312172378e-07,
+    "height_dynamic_range": 1.5499980463573593e-06
+  },
+  {
+    "epoch": 31,
+    "height_min": 7.037884272760586e-13,
+    "height_max": 1.5499988421652233e-06,
+    "height_mean": 7.879164627411228e-07,
+    "height_std": 2.0111460230509692e-07,
+    "height_dynamic_range": 1.549998160044197e-06
+  },
+  {
+    "epoch": 32,
+    "height_min": 6.68225457606253e-13,
+    "height_max": 1.5499988421652233e-06,
+    "height_mean": 7.881566830292286e-07,
+    "height_std": 2.0165997227650223e-07,
+    "height_dynamic_range": 1.549998160044197e-06
+  },
+  {
+    "epoch": 33,
+    "height_min": 6.413190833422233e-13,
+    "height_max": 1.5499990695388988e-06,
+    "height_mean": 7.88404008744692e-07,
+    "height_std": 2.0154909918801422e-07,
+    "height_dynamic_range": 1.5499983874178724e-06
+  },
+  {
+    "epoch": 34,
+    "height_min": 6.14295073142479e-13,
+    "height_max": 1.5499990695388988e-06,
+    "height_mean": 7.886695811976097e-07,
+    "height_std": 2.019718010615179e-07,
+    "height_dynamic_range": 1.5499985011047102e-06
+  },
+  {
+    "epoch": 35,
+    "height_min": 5.900534509779842e-13,
+    "height_max": 1.5499990695388988e-06,
+    "height_mean": 7.888474442552251e-07,
+    "height_std": 2.021443634703246e-07,
+    "height_dynamic_range": 1.5499985011047102e-06
+  },
+  {
+    "epoch": 36,
+    "height_min": 5.740233050173515e-13,
+    "height_max": 1.5499990695388988e-06,
+    "height_mean": 7.890560596024443e-07,
+    "height_std": 2.0220784335833741e-07,
+    "height_dynamic_range": 1.5499985011047102e-06
+  },
+  {
+    "epoch": 37,
+    "height_min": 5.575331320749333e-13,
+    "height_max": 1.5499991832257365e-06,
+    "height_mean": 7.893228257671581e-07,
+    "height_std": 2.0368150899230386e-07,
+    "height_dynamic_range": 1.5499986147915479e-06
+  },
+  {
+    "epoch": 38,
+    "height_min": 5.455401213237676e-13,
+    "height_max": 1.5499991832257365e-06,
+    "height_mean": 7.894685722931172e-07,
+    "height_std": 2.0348156226646097e-07,
+    "height_dynamic_range": 1.5499986147915479e-06
+  },
+  {
+    "epoch": 39,
+    "height_min": 5.352966876183418e-13,
+    "height_max": 1.5499991832257365e-06,
+    "height_mean": 7.896081797298393e-07,
+    "height_std": 2.0346591611541953e-07,
+    "height_dynamic_range": 1.5499986147915479e-06
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "output_dir": "outputs/experiments/directpsf_16layers_p191_20260307_233408",
+  "best_val": 0.1105469306310018,
+  "best_epoch": 33,
+  "last_train_stats": {
+    "L_total": 0.06856545524579519,
+    "L_rgb": 0.02119585833857129,
+    "L_depth": 0.0013086869313910106
+  },
+  "last_val_stats": {
+    "L_total": 0.11437996956209341,
+    "L_rgb": 0.03210669721166293,
+    "L_depth": 0.0025083287756812447
+  },
+  "args": {
+    "data_dir": "data/processed/nyuv2_near_range_patches",
+    "output_dir": "outputs/experiments",
+    "batch_size": 2,
+    "num_workers": 8,
+    "epochs": 40,
+    "steps_per_epoch": null,
+    "val_steps": null,
+    "learning_rate": 0.0001,
+    "psf_learning_rate": 0.01,
+    "lambda_depth": 20.0,
+    "lambda_rgb": 2.0,
+    "base_channels": 64,
+    "psf_size": 191,
+    "psf_init": "delta",
+    "num_depth_layers": 16,
+    "depth_min": 0.3,
+    "depth_max": 1.5,
+    "focus_distance": 0.9,
+    "noise_std": 0.0,
+    "auto_exposure": true,
+    "fixed_gain": 5.0,
+    "fix_qe": true,
+    "device": "auto",
+    "seed": 42,
+    "run_name": "directpsf_16layers_p191",
+    "num_visualization_samples": 4,
+    "save_full_psf_visualizations": true
+  }
+}

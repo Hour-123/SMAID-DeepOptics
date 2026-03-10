@@ -1,0 +1,9 @@
+{
+  "wave_feature_size": 1.1764705882352942e-05,
+  "sensor_pixel_size": 1.1764705882352942e-05,
+  "sensor_sampling_factor": 1.0,
+  "effective_sensor_pixel_size": 1.1764705882352942e-05,
+  "sensor_sampling_ratio_error": 0.0,
+  "aperture_fill_ratio": 0.6666666666666666,
+  "sensor_crop_size_wave": 191.0
+}

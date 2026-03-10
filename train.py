@@ -46,7 +46,7 @@ def parse_args():
     parser.add_argument("--height_map_noise_std", type=float, default=0.0)
     parser.add_argument("--height_quantization_res", type=float, default=21.16e-9)
     parser.add_argument("--laplace_reg", type=float, default=0.0)
-    parser.add_argument("--psf_edge_reg", type=float, default=0.0)
+    parser.add_argument("--psf_edge_reg", type=float, default=1e-3)
     parser.add_argument("--quantization_reg", type=float, default=0.0)
     parser.add_argument(
         "--quantization_reg_anneal",
